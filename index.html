@@ -1,0 +1,767 @@
+<!DOCTYPE html>     <!----- definición de html 5 -->          
+<html lang="es"> 	<!----- definición del lenguaje -->  
+					<!------Inicio del  HEAD -->
+<head>
+  <title>Galeria Arte Fino</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+	<!----- viewport para apple device-width = ancho pantalla initial-scale es que inicia sin ningún zoom --> 
+    <link rel="apple-touch-icon" href="assets/img/tienda.png">
+	<!----- icono para apple y safari --> 
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/tienda.ico">
+    <!-- Load Require CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	    <!-- iconos  -->
+    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+	    <!-- tipo de letra -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+		<!-- carga CSS -->
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<!-----
+.text-primary  		azul
+.text-secondary		gris
+.text-success		verde
+.text-danger		rojo
+.text-warning		amarillo
+.text-info			celeste
+.text-light			blanco
+.text-dark			negro
+.text-muted			gris oscuro
+.text-white			gris claro
+-->
+<!------------------------------------------------------------------ Fin del  HEAD -->
+<body>
+    <!-- Header 
+	nav = cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual 
+	o a otros documentos
+	-->
+
+    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-info shadow">
+	
+	<!--navbar-expand-lg = envoltorio para que el navbar se estire en lg
+	navbar-light = texto negro de la letra
+	bg-white = fondo de color blanco
+	-->
+
+        <div class="container d-flex justify-content-between align-items-center">
+		
+            <a class="navbar-brand h1" href="index.html">
+			<!--navbar-brand = clase se utiliza para resaltar la marca o logotipo de su página-->	
+                <i class='bx bx-store bx-sm text-dark'></i>
+				<!--	bx bx-buildings = icono del logo de la web: 
+				http://www.unisvg.com/icon-sets/bx/bx-buildings.html 
+				https://boxicons.com/
+				-->
+
+	       <span class="text-dark h4">Galeria - </span><span class="text-dark h4">Arte Fino</span></a>
+			
+			<!--	boton de hamburguesa --> 
+  	          <button class="navbar-toggler border-0" 
+				type="button" data-bs-toggle="collapse" 
+				data-bs-target="#navbar-toggler-success" 
+				aria-controls="navbarSupportedContent" 
+				aria-expanded="false" 
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon">
+				</span>
+            </button>
+		<!------------------------------------------- Opciones del Menu		-->
+		<div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" 
+		id="navbar-toggler-success">
+		
+		<!-------collapse navbar-collapse= para agrupar y ocultar el contenido de la barra de navegación 
+		por un punto de interrupción principal.
+		flex-fill = obliga a que todos los elementos tengan el mismo tamaño de ancho
+		d-lg-flex = utilidades para crear un contenedor flexbox y transforme los elementos secundarios 
+		directos en elementos flexibles
+		-->
+  		              <div class="flex-fill mx-xl-5 mb-2">
+				<!--	  mx=para clases que establecen tanto *-lefty*-right-->
+ 	                   <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
+					<!--   .navbar-nav para una navegación ligera y de altura completa 
+					   (incluida la compatibilidad con menús desplegables).-->
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-dark rounded-pill px-3" href="index.html">Home</a>
+						<!-- px = padding y mx es el margin 
+						rounded-pill =genera ese boton con bordes redondeados rounded-circle-->	
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-dark rounded-pill px-3" href="work1.html">Portfolio</a>
+                        </li>
+						<li class="nav-item">
+                            <a class="nav-link btn-outline-dark rounded-pill px-3" href="work2.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-dark rounded-pill px-3" href="pricing2.html">Precios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-dark rounded-pill px-3" href="contact2.html">Contácto</a>
+                        </li>
+						 <li class="nav-item">
+                            <a class="nav-link btn-outline-dark rounded-pill px-3" href="about2.html">Sobre Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+
+<!---------------------------------------------------------Fin de las opciones del menu
+------------------------------------------------------------ Inicio de los iconos del menu-->
+                <div class="navbar align-self-center d-flex">
+                   
+                    <a class="nav-link" href="#"><i class='bx bx-user-circle bx-sm bx-tada-hover text-dark'></i></a>
+					<a class="nav-link" href="#"><i class='bx bx-cart bx-sm bx-tada-hover text-dark'></i></a>
+				    <!--	https://iconify.design/icon-sets/bx/-->
+                </div>
+            </div>
+        </div>
+    </nav>
+<!----------------------------------------------------------- Fin de los iconos del menu
+
+    <!-- Close Header -->
+ <!----------------------------------------------------------- Fin del Header-->
+
+    <!-- Start Banner Hero -->
+    <div class="banner-wrapper bg-light">
+        <!--<div id="index_banner" class="banner-vertical-center-index container-fluid pt-5">-->
+        <div id="index_banner" class="banner-wrapper bg-light w-100 py-5">
+            <!-- Start slider -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" ></li>
+                </ol>
+ <!-- class="active" Se requiere un elemento activo inicial
+La .activeclase debe agregarse a una de las diapositivas. De lo contrario, el carrusel no será visible. -->
+				
+                <div class="carousel-inner">
+				
+<!-- Primer elemento del carrousel 
+Ver: https://getbootstrap.com/docs/4.0/components/carousel/  -->				
+
+                    <div class="carousel-item active">
+
+                 <div class="py-5 row d-flex align-items-center">
+                  <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5">
+                    <h1 class="banner-heading h1 text-secondary display-3 mb-0 pb-5 mx-0 px-0 light-300 typo-space-line">
+					<!--typo-space-line = clase configurada en el css 
+					display-3 = <H3> 
+					Where property is one of:
+
+						m - for classes that set margin
+						p - for classes that set padding
+						Where sides is one of:
+
+						t - for classes that set margin-top or padding-top
+						b - for classes that set margin-bottom or padding-bottom
+						l - for classes that set margin-left or padding-left
+						r - for classes that set margin-right or padding-right
+						x - for classes that set both *-left and *-right
+						y - for classes that set both *-top and *-bottom
+						blank - for classes that set a margin or padding on all 4 sides of the element
+						ejemplo: 
+						<div class="mx-auto" style="width: 200px;">
+						  Centered element
+						</div>
+					
+					-->
+                                    <strong>Arte</strong> para tu negocio </h1>
+                                <p class="banner-body text-muted py-3 mx-0 px-0">
+                                    Nos dedicamos al diseño de Arte Fino al Óleo, revisa nuestros temas
+                              </p>
+                                <a class="banner-button btn rounded-pill btn-outline-dark btn-lg px-4" 
+								href="work2.html" role="button">Comenzar</a>
+                            </div>
+                        </div>
+
+                    </div>
+ <!----------------------------------------------------------- Nuevo ITem del Carrousel-->
+
+                    <div class="carousel-item">
+
+                        <div class="py-5 row d-flex align-items-center">
+                            <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5">
+                                <h1 class="banner-heading h1 text-secondary display-3 mb-0 pb-3 mx-0 px-0 light-300">
+                                    Diseñamos tus ideas
+                                </h1>
+                                <p class="banner-body text-muted py-3">
+                                    Ve nuestro catalogo
+                                </p>
+                                <a class="banner-button btn rounded-pill btn-outline-dark btn-lg px-4" 
+					href="work2.html" role="button">Inicio</a>
+					 <!--role="button" indica que un boton no apunta a una url sino que hace otra cosa-->	
+                            </div>
+                        </div>
+
+                    </div>
+ <!----------------------------------------------------------- Nuevo ITem del Carrousel-->					
+                    <div class="carousel-item">
+
+                        <div class="py-5 row d-flex align-items-center">
+                            <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5">
+                                <h1 class="banner-heading h1 text-secondary display-3 mb-0 pb-3 mx-0 px-0 light-300">
+                                    Contácto.
+                                </h1>
+                                <p class="banner-body text-muted py-3">
+                                    Escribenos o llamanos. 
+                                </p>
+                                <a class="banner-button btn rounded-pill btn-outline-dark btn-lg px-4" href="contact2.html" role="button">Comezar</a>
+								
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+    <!-------------------------------------------------------Flechas del carrousel   -->
+                <a class="carousel-control-prev text-decoration-none" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                    <i class='bx bx-chevron-left'></i>
+                    <span class="visually-hidden">Ant.</span>
+                </a>
+                <a class="carousel-control-next text-decoration-none" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                    <i class='bx bx-chevron-right'></i>
+                    <span class="visually-hidden">Prox.</span>
+                </a>
+            </div>
+			 <!-- bx-chevron-right y left son las puntas de flecha del carrousel -->
+            <!-- End slider -->
+
+        </div>
+    </div>
+    <!-- End Banner Hero -->
+	
+    <!-- Start Service -->
+    <section class="service-wrapper py-3">
+        <div class="container-fluid pb-3">
+            <div class="row">
+                <h2 class="h2 text-center col-12 py-5 semi-bold-600">Portfolio</h2>
+                <div class="service-header col-2 col-lg-3 text-end light-300">
+                    <i class='bx bx-paint h3 mt-1'></i>
+                </div>
+                <div class="service-heading col-10 col-lg-9 text-start float-end light-300">
+                    <h2 class="h3 pb-4 typo-space-line">Selecciona tu corriente artistica favorita:</h2>
+                </div>
+            </div>
+            <p class="service-footer col-10 offset-2 col-lg-9 offset-lg-3 text-start pb-3 text-muted px-2">
+               <!--No busques más clientes, ellos te buscarán a ti.-->
+            </p>
+        </div>
+
+        <div class="service-tag py-5 bg-info">
+            <div class="col-md-12">
+                <ul class="nav d-flex justify-content-center">
+                    <li class="nav-item mx-lg-4">
+                        <a class="filter-btn nav-link btn-outline-dark active shadow rounded-pill text-light px-4 
+						light-300" href="#" data-filter=".project">Todo</a>
+				<!-- btn-outline = boton transparente -->
+                    </li>
+                    <li class="nav-item mx-lg-4">
+                        <a class="filter-btn nav-link btn-outline-dark rounded-pill text-light px-4 light-300" 
+						href="#" data-filter=".graphic">Impresionismo</a>
+                    </li>
+                    <li class="filter-btn nav-item mx-lg-4">
+                        <a class="filter-btn nav-link btn-outline-dark rounded-pill text-light px-4 light-300" 
+						href="#" data-filter=".ui">Cubismo</a>
+                    </li>
+                    <li class="nav-item mx-lg-4">
+                        <a class="filter-btn nav-link btn-outline-dark rounded-pill text-light px-4 light-300" 
+						href="#" data-filter=".branding">Surrealismo</a>
+                    </li>
+					<li class="nav-item mx-lg-4">
+                        <a class="filter-btn nav-link btn-outline-dark rounded-pill text-light px-4 light-300" 
+						href="#" data-filter=".branding">Paisajista</a>
+                    </li>
+					<li class="nav-item mx-lg-4">
+                        <a class="filter-btn nav-link btn-outline-dark rounded-pill text-light px-4 light-300" 
+						href="#" data-filter=".branding">Hiperrealismo</a>
+                    </li>
+					<li class="nav-item mx-lg-4">
+                        <a class="filter-btn nav-link btn-outline-dark rounded-pill text-light px-4 light-300" 
+						href="#" data-filter=".branding">Realismo</a>
+                    </li>
+					<li class="nav-item mx-lg-4">
+                        <a class="filter-btn nav-link btn-outline-dark rounded-pill text-light px-4 light-300" 
+						href="#" data-filter=".branding">Expresionismo</a>
+                    </li>
+					<li class="nav-item mx-lg-4">
+                        <a class="filter-btn nav-link btn-outline-dark rounded-pill text-light px-4 light-300" 
+						href="#" data-filter=".branding">Arte Abstracto</a>
+                    </li>
+					<li class="nav-item mx-lg-4">
+                        <a class="filter-btn nav-link btn-outline-dark rounded-pill text-light px-4 light-300" 
+						href="#" data-filter=".branding">Arte Pop</a>
+                    </li>
+					<li class="nav-item mx-lg-4">
+                        <a class="filter-btn nav-link btn-outline-dark rounded-pill text-light px-4 light-300" 
+						href="#" data-filter=".branding">Románico</a>
+                    </li>
+					<li class="nav-item mx-lg-4">
+                        <a class="filter-btn nav-link btn-outline-dark rounded-pill text-light px-4 light-300" 
+						href="#" data-filter=".branding">Gótico</a>
+                    </li>
+					<li class="nav-item mx-lg-4">
+                        <a class="filter-btn nav-link btn-outline-dark rounded-pill text-light px-4 light-300" 
+						href="#" data-filter=".branding">Barroco</a>
+                    </li>
+					<li class="nav-item mx-lg-4">
+                        <a class="filter-btn nav-link btn-outline-dark rounded-pill text-light px-4 light-300" 
+						href="#" data-filter=".branding">Post Impresionismo</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="container overflow-hidden py-5">
+        <div class="row gx-5 gx-sm-3 gx-lg-5 gy-lg-5 gy-3 pb-3 projects">
+
+            <!-- Comienzan los trabajos recientes -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project ui branding">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="service card-img" src="./assets/img/Impresionismo.JPG" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Impresionismo</span>
+                            <p class="card-text">Pierre-Auguste Renoir, Claude Monet</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project ui graphic">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/Cubismo.JPG" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Cubismo</span>
+                            <p class="card-text">Pablo Picasso, Georges Braque, Jean Metzinger.</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project branding">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/Surrealismo.JPG" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Surrealismo</span>
+                            <p class="card-text">Paul Klee, Mark Chagall</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project ui graphic">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/Paisajista.JPG" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Paisajista</span>
+                            <p class="card-text">Joshep Mallord</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project ui graphic">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/Hiperrealismo3.JPG" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Hiperrealismo</span>
+                            <p class="card-text">John Kacere, Jeffrey Smart</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project branding">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/Realismo.JPG" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Realismo</span>
+                            <p class="card-text">Francis Davis Millet, Robert Henry</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project branding">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/Expresionismo.JPG" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Expresionismo</span>
+                            <p class="card-text">Edvard Munch, Carl Holsøe</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project ui graphic branding">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/Abstracto.JPG" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Arte Abstracto</span>
+                            <p class="card-text">Victor Hugo, David Burliuk</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+			
+			<!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project ui graphic branding">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/Pop.JPG" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Arte Pop</span>
+                            <p class="card-text">Alex Katz, Charles Blackman</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+             
+			 <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project ui graphic branding">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/Romanico.JPG" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Romanico</span>
+                            <p class="card-text">Hildegarda de Bingen, Facundus</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+			
+			<!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project ui graphic branding">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/Gotico.JPG" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Gótico</span>
+                            <p class="card-text">Simone Martini, Pietro Lorenzetti</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+			
+			<!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project ui graphic branding">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/Barroco.JPG" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Barroco</span>
+                            <p class="card-text">Gabriel Metsu</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+			
+			<!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project ui graphic branding">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/Postimpresionismo.JPG" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Post Impresionismo</span>
+                            <p class="card-text">Paul Cézanne, Vincent Van Gogh</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+        </div>
+    </section>
+    <!-- End Service -->
+
+
+
+
+
+
+    <!-- Start View Work -->
+    <section class="bg-info">
+        <div class="container py-5">
+            <div class="row d-flex justify-content-center text-center">
+                <div class="col-lg-2 col-12 text-light align-items-center">
+                    <i class='display-1 bx bxs-gift bx-lg'></i>
+                </div>
+                <div class="col-lg-7 col-12 text-light pt-2">
+                    <h3 class="h4 light-300">"Un verdadero artista no es el que se inspira, sino quien inspira a otros"...</h3>
+                    <p class="light-300">Salvador Dalí .</p>
+                </div>
+                <div class="col-lg-3 col-12 pt-4">
+                    <a href="#" class="btn btn-dark rounded-pill btn-block shadow px-4 py-2">Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End View Work -->
+
+    <!-- Start Recent Work -->
+    <section class="py-5 mb-5">
+        <div class="container">
+            <div class="recent-work-header row text-center pb-5">
+                <h2 class="col-md-6 m-auto h2 semi-bold-600 py-5">Galeria</h2>
+            </div>
+            <div class="row gy-5 g-lg-5 mb-4">
+
+                <!-- Start Recent Work -->
+                <div class="col-md-4 mb-3">
+                    <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
+                        <img class="recent-work-img card-img" src="./assets/img/Negocio.JPG" alt="Card image">
+                        <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                            <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                <h3 class="card-title light-300">Negocio</h3>
+                                <p class="card-text">Dale estilo a tu oficina</p>
+                            </div>
+                        </div>
+                    </a>
+                </div><!-- End Recent Work -->
+
+                <!-- Start Recent Work -->
+                <div class="col-md-4 mb-3">
+                    <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
+                        <img class="recent-work-img card-img" src="./assets/img/Hogar.JPG" alt="Card image">
+                        <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                            <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                <h3 class="card-title light-300">Hogar</h3>
+                                <p class="card-text">Con finura en tu hogar.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div><!-- End Recent Work -->
+
+                <!-- Start Recent Work -->
+                <div class="col-md-4 mb-3">
+                    <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
+                        <img class="recent-work-img card-img" src="./assets/img/Flores.JPG" alt="Card image">
+                        <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                            <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                <h3 class="card-title light-300">Flores</h3>
+                                <p class="card-text">El arte de la elegancia</p>
+                            </div>
+                        </div>
+                    </a>
+                </div><!-- End Recent Work -->
+
+                <!-- Start Recent Work -->
+                <div class="col-md-4 mb-3">
+                    <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
+                        <img class="recent-work-img card-img" src="./assets/img/Retrato.JPG" alt="Card image">
+                        <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                            <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                <h3 class="card-title light-300">Retrato</h3>
+                                <p class="card-text">Conserva tu imagen para siempre</p>
+                            </div>
+                        </div>
+                    </a>
+                </div><!-- End Recent Work -->
+
+                <!-- Start Recent Work -->
+                <div class="col-md-4 mb-3">
+                    <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
+                        <img class="recent-work-img card-img" src="./assets/img/Paisaje.JPG" alt="Card image">
+                        <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                            <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                <h3 class="card-title light-300">Paisaje</h3>
+                                <p class="card-text">Inmortaliza tu lugar favorito</p>
+                            </div>
+                        </div>
+                    </a>
+                </div><!-- End Recent Work -->
+
+                <!-- Start Recent Work -->
+                <div class="col-md-4 mb-3">
+                    <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
+                        <img class="recent-work-img card-img" src="./assets/img/Tusideas.JPG" alt="Card image">
+                        <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                            <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                <h3 class="card-title light-300">Tus ideas</h3>
+                                <p class="card-text">Diseñamos tu idea.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div><!-- End Recent Work -->
+
+            </div>
+        </div>
+    </section>
+    <!-- End Recent Work -->
+
+
+
+    <!-- Start Footer -->
+    <footer class="bg-info pt-4">
+        <div class="container">
+            <div class="row py-4">
+
+                <div class="col-lg-3 col-12 align-left">
+                    <a class="navbar-brand" href="index.html">
+                        <i class='bx bx-store bx-sm text-light'></i>
+                        <span class="text-light h5">Galeria - Arte Fino</span>
+                    </a>
+                    <p class="text-light my-lg-4 my-2">
+                        Diseñamos para tu trabajo y hogar
+                    </p>
+                    <ul class="list-inline footer-icons light-300">
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="http://facebook.com/">
+                                <i class='bx bxl-facebook-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.linkedin.com/">
+                                <i class='bx bxl-linkedin-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.whatsapp.com/">
+                                <i class='bx bxl-whatsapp-square bx-md'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h3 class="h4 pb-lg-3 text-light light-300">Nuestra Tienda</h2>
+                        <ul class="list-unstyled text-light light-300">
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light" 
+								href="index.html">Home</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+								href="about2.html">Sobre Nosotros</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+								href="work2.html">Catalogo</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a class="text-decoration-none text-light py-1" 
+								href="work1.html">Tu Diseño</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+								href="pricing2.html">Precios</a>
+                            </li>
+                        </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">Catalogo de Temas</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+							href="#">Negocio</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+							href="#">Hogar</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+							href="#">Flores</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+							href="#">Retratos</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+							href="#">Paisaje</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+							href="#">Tu idea</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">Contáctanos:</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-light py-1" 
+							href="tel:010-020-0340">52 22 1530 9269</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1"
+							href="mailto:mlimonr220@gmail.com">mlimonr220@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-100 bg-dark py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-start text-center text-light light-300">
+                            © Copyright 2021 Galeria Arte Fino. Todos los derechos reservados.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-end text-center text-light light-300">
+                            Diseñado por <a rel="sponsored" class="text-decoration-none text-light" 
+							href="https://cursophp.com.ar/" target="_blank"><strong>CAC FullStack</strong></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Load jQuery require for isotope -->
+    <script src="assets/js/jquery.min.js"></script>
+   <!-- Isotope -->
+    <script src="assets/js/isotope.pkgd.js"></script>
+    <!-- Page Script -->
+    <script>
+        $(window).load(function() {
+            // init Isotope
+            var $projects = $('.projects').isotope({
+                itemSelector: '.project',
+                layoutMode: 'fitRows'
+            });
+            $(".filter-btn").click(function() {
+                var data_filter = $(this).attr("data-filter");
+                $projects.isotope({
+                    filter: data_filter
+                });
+                $(".filter-btn").removeClass("active");
+                $(".filter-btn").removeClass("shadow");
+                $(this).addClass("active");
+                $(this).addClass("shadow");
+                return false;
+            });
+        });
+    </script>	
+ 
+   
+</body>
+
+</html>
